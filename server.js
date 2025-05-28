@@ -53,10 +53,7 @@ const limiter = rateLimit({
 // MongoDB Connection
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://yogibaba1207:74488851@ascetic.zjr8s.mongodb.net/?retryWrites=true&w=majority&appName=Ascetic', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect('mongodb+srv://yogibaba1207:74488851@ascetic.zjr8s.mongodb.net/?retryWrites=true&w=majority&appName=Ascetic');
     console.log('MongoDB connected');
   } catch (err) {
     console.error('MongoDB connection error:', err.message);
