@@ -27,7 +27,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://frontend-lms-rust.vercel.app',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));
